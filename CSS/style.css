@@ -1,0 +1,964 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* Header  */
+
+.hero-section {
+  position: relative;
+  height: 90vh;
+  margin: 20px;
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+  z-index: -2;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  z-index: -1;
+}
+
+.brand-logo {
+  height: 60px;
+  width: auto;
+}
+
+.custom-navbar {
+  background: #fff;
+  border-radius: 15px;
+  margin: 0 auto;
+  width: 95%;
+  padding: 0px 20px !important;
+}
+
+.custom-navbar .navbar-nav.mx-auto .nav-link {
+  color: #000 !important;
+  font-weight: 400;
+  margin: 0 8px;
+  font-size: 0.8rem;
+}
+
+.custom-navbar .navbar-nav.ms-auto .nav-link {
+  color: #000 !important;
+  font-weight: 600 !important;
+  font-size: 0.9rem;
+}
+
+.custom-navbar .navbar-nav.mx-auto .nav-link.active,
+.custom-navbar .navbar-nav.mx-auto .nav-link:hover {
+  color: red !important;
+}
+
+.hero-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  padding: 20px;
+}
+
+.hero-content h1 {
+  white-space: nowrap;
+}
+
+.hero-content p {
+  font-weight: 400;
+  margin-top: 15px;
+  font-size: 1.5rem;
+}
+
+.hero-content .btn-primary {
+  font-weight: 500;
+  background-color: red;
+  border-color: red;
+  font-size: 0.83rem;
+  padding: 0.5rem 1rem !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+.hero-content .btn-primary:hover {
+  background-color: darkred;
+  border-color: darkred;
+}
+
+/* Badminton Cards Section */
+
+.badminton-games-head h1 {
+  font-size: 1.9rem;
+  margin-bottom: 2rem;
+  font-weight: 700;
+  color: #000;
+}
+
+.upcoming-games-con {
+  margin-bottom: 2rem;
+}
+
+.upcoming-games-icons:hover {
+  cursor: pointer;
+}
+
+.upcoming-games-icons i {
+  background-color: rgb(209, 209, 209);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem !important;
+  transition: all ease-in-out 0.3s;
+}
+
+.upcoming-games-icons i:hover {
+  transform: scale(1.2);
+}
+
+.badminton-card {
+  border: 1px solid black;
+  border-radius: 16px;
+  overflow: hidden;
+  background: #fff;
+  max-width: 450px;
+  min-height: 240px;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin: auto;
+  margin-bottom: 24px;
+  margin-top: 0.5rem;
+}
+
+.badminton-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
+}
+
+.badminton-card-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 170px;
+  overflow: hidden;
+}
+
+.badminton-card-img img {
+  height: 100%;
+  object-fit: contain;
+  width: 100%;
+  padding: 1rem;
+}
+
+.badminton-card-body {
+  padding: 1.5rem 1.5rem 0 1.5rem;
+  flex-grow: 1;
+  margin-top: 0;
+}
+
+.badminton-card-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.badminton-card-title h4 {
+  font-weight: 700;
+  font-size: 1.18rem;
+  line-height: 1.2;
+}
+
+.badminton-heart {
+  width: 24px;
+  height: 24px;
+}
+
+.badminton-heart img {
+  width: 100%;
+  height: auto;
+}
+
+.badminton-location {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+  color: #666;
+}
+
+.badminton-location i {
+  font-size: 0.6rem;
+}
+
+.badminton-location h6 {
+  margin: 0;
+  font-weight: 400;
+  line-height: 1.2;
+  font-size: 0.8rem;
+}
+
+.text-danger {
+  color: #dc3545 !important;
+}
+
+.carousel-item {
+  transition: transform 0.6s ease-in-out;
+}
+
+.carousel-indicators {
+  bottom: -40px !important;
+  margin-left: 0;
+  margin-right: 0;
+  justify-content: center;
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #d8d8d8 !important;
+  border: none;
+  opacity: 1;
+  transition: background-color 0.3s ease;
+}
+
+.carousel-indicators .active {
+  background-color: #dc3545 !important;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  display: none;
+}
+
+/* Favourities Section  */
+
+.favourite-card {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  overflow: hidden;
+  background: #fff;
+  min-height: 240px;
+  max-width: 450px;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin: auto;
+  margin-bottom: 24px;
+  margin-top: 0.5rem;
+}
+
+.favourite-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
+}
+
+.favourite-card-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 170px;
+  overflow: hidden;
+}
+
+.favourite-card-img img {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+.favourite-card-body {
+  padding: 1.5rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.favourite-card-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.favourite-card-title h4 {
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.2;
+}
+
+.favourite-heart {
+  font-size: 1.5rem;
+  color: #dc3545 !important;
+}
+
+.favourite-location {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+  color: #666;
+}
+
+.favourite-location i {
+  font-size: 0.6rem;
+}
+
+.favourite-location h6 {
+  margin: 0;
+  font-weight: 400;
+  line-height: 1.2;
+  font-size: 0.8rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.text-danger {
+  color: #dc3545 !important;
+}
+
+.carousel-item {
+  transition: transform 0.6s ease-in-out;
+}
+
+.carousel-indicators {
+  bottom: -40px;
+  margin-left: 0;
+  margin-right: 0;
+  justify-content: center;
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 10px !important;
+  height: 10px !important;
+  border-radius: 50%;
+  background-color: #d8d8d8;
+  border: none;
+  opacity: 1;
+  transition: background-color 0.3s ease;
+}
+
+.carousel-indicators .active {
+  background-color: #dc3545;
+}
+
+.favourite-games-con .upcoming-games-icons {
+  display: none;
+}
+
+.btn-direction {
+  background-color: rgb(220, 3, 3) !important;
+  border-color: rgb(220, 3, 3) !important;
+  color: #fff !important;
+  font-weight: bold;
+  font-size: 0.7rem;
+  display: inline-flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 0.2rem;
+  margin-top: 0.8rem;
+  max-width: fit-content;
+}
+
+.btn-direction span {
+  font-size: 0.8rem;
+}
+
+.btn-direction i {
+  font-size: 0.8rem;
+}
+
+.btn-direction:hover {
+  background-color: #c82333 !important;
+  border-color: #bd2130 !important;
+}
+
+/* Banner Section  */
+
+.banner {
+  width: 86% !important;
+  margin-top: 3rem;
+}
+
+/* Coaching Section */
+
+.coaching-card-v2 {
+  position: relative;
+  border: 1px solid rgb(223, 219, 219);
+  border-radius: 16px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+}
+
+.coaching-card-v2:hover {
+  border-radius: 16px;
+  padding: 0.5rem;
+}
+
+.coaching-card-v2 .image-wrapper {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+  transition: height 0.4s ease-in-out;
+  border-radius: 16px;
+}
+
+.coaching-card-v2:hover .image-wrapper {
+  height: 55%;
+}
+
+.coaching-card-v2 .image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.coaching-card-v2:hover .price-label {
+  opacity: 1;
+}
+
+.coaching-card-v2:hover .hashtag-label {
+  opacity: 1;
+}
+
+.coaching-card-v2 .price-label {
+  position: absolute;
+  top: 0.3rem;
+  right: 0.2rem;
+  background-color: red;
+  opacity: 0;
+  color: #fff;
+  padding: 0.1rem 0.5rem;
+  border-radius: 16px;
+  font-size: 0.6rem;
+  font-weight: 500;
+  max-width: fit-content;
+}
+
+.coaching-card-v2 .hashtag-label {
+  position: absolute;
+  top: 11rem;
+  right: -0.5rem;
+  background-color: red;
+  opacity: 0;
+  color: #fff;
+  margin-right: 4rem;
+  padding: 0.1rem 0.5rem;
+  border-radius: 16px;
+  font-size: 0.6rem;
+  font-weight: 500;
+}
+
+.coaching-card-v2 .content-wrapper {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 1rem 0.5rem 1rem 0.5rem;
+  margin-left: -0.5rem;
+  transform: translateY(100%);
+  transition: transform 0.4s ease-in-out;
+  height: 45%;
+}
+
+.coaching-card-v2:hover .content-wrapper {
+  transform: translateY(0);
+}
+
+.coaching-card-v2 h4 {
+  font-weight: 700;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.coaching-card-v2 .schedule {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+
+.coaching-card-v2 .schedule h6 {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #444;
+  margin: 0;
+}
+
+.coaching-card-v2 .schedule span {
+  font-size: 0.8rem;
+  color: #c1c1c1;
+}
+
+.coaching-card-v2 .location {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  font-size: 0.8rem;
+  color: #000000;
+  margin-bottom: 1.5rem;
+}
+
+.coaching-card-v2 .location i {
+  font-size: 0.7rem;
+  margin-top: 2px;
+}
+
+.coaching-card-v2 .location h6 {
+  margin: 0;
+  line-height: 1.4;
+  font-size: 0.8rem;
+}
+
+.coaching-card-v2 .btn-book {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  font-size: 0.6rem;
+  font-weight: 600;
+  background-color: red !important;
+  border-color: red !important;
+  color: #fff !important;
+  border-radius: 20px;
+  transition: background-color 0.2s ease;
+}
+
+.coaching-card-v2 .btn-book:hover {
+  background-color: #121f4a !important;
+  border-color: #121f4a !important;
+}
+
+.coaching-indicators {
+  bottom: -65px !important;
+}
+
+/* News Room Section */
+
+.news-room {
+  margin-top: 6rem;
+}
+
+.news-room-con h1 {
+  font-size: 1.9rem;
+  font-weight: 800;
+}
+
+.news-room-con p {
+  font-size: 0.7rem !important;
+  max-width: 24rem;
+  color: #a9a8a8;
+  font-weight: 300;
+  margin-bottom: 1.5rem;
+}
+
+/* News Banner Section  */
+
+.news-banner-card {
+  background-color: #fff;
+  border-radius: 1rem;
+  border: 1px solid rgb(216, 216, 216);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+
+.news-banner-content {
+  padding: 1rem 0rem 0rem 1.5rem !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.news-banner-content h1 {
+  font-size: 1.3rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.news-banner-content p {
+  font-size: 0.8rem;
+  color: #bababa;
+  line-height: 1.5;
+  padding-right: 2rem;
+}
+
+.news-banner-content .news-banner-date {
+  color: #ff0019;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-top: 1rem;
+}
+
+.news-banner-image-container {
+  display: flex;
+}
+
+.news-banner-image-container img {
+  width: 100%;
+  height: auto;
+  max-height: 315px;
+  object-fit: cover;
+}
+
+/* Small Cards Section  */
+
+.small-cards .container-fluid {
+  padding: 0 !important;
+}
+
+.card-con {
+  width: 100%;
+  border: 1px solid #e0e0e0;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  padding-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card-con:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card-img-top {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 1rem !important;
+  flex-grow: 1;
+}
+
+.card-body h4 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+}
+
+.card-body h6 {
+  font-size: 0.7rem;
+  color: red;
+  margin-bottom: 0;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  display: none !important;
+}
+
+.carousel-indicators {
+  bottom: -50px !important;
+  margin-top: 2rem;
+}
+
+.carousel-indicators button {
+  background-color: transparent;
+  border: 1px solid red;
+  border-radius: 50%;
+  height: 10px;
+  width: 10px;
+  margin: 0 5px;
+  opacity: 1;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.carousel-indicators .active {
+  background-color: red;
+}
+
+/* Partners Section  */
+
+.partners-section {
+  padding: 1rem 0 2rem 0;
+  text-align: center;
+  background-color: #1c3a58;
+  margin-top: 4rem;
+}
+
+.partners-section h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  color: white;
+}
+
+.logo-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.logo-card {
+  background-color: #1c3a58;
+  border: 1px solid #556c86;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+  height: 100px;
+}
+
+.logo-card:hover {
+  border-color: white;
+  background-color: white;
+}
+
+.logo-card img {
+  width: 75%;
+  height: 75%;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+}
+
+.logo-card:hover img {
+  filter: none;
+}
+
+/* Member's Gallery Section  */
+
+.members-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.members-head h1 {
+  margin-bottom: 2.5rem;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.member-card {
+  background-color: white;
+  border: 2px solid white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 0 2px rgb(41, 41, 41);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 0.3rem;
+}
+
+.member-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.member-body {
+  padding: 1rem 0.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.profile-section {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.profile-img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid white;
+}
+
+.profile-name {
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.action-section {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.action-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: black;
+  font-size: 0.7rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.action-item .icon {
+  font-size: 1rem;
+}
+
+/* Badminton Journey  */
+
+.full-width-section {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.badminton-journey-section {
+  min-height: 500px;
+  background-image: url("/Images/footer.jpg");
+  background-size: cover;
+  background-position: right;
+  color: white;
+  padding: 3rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.badminton-journey-content {
+  max-width: 600px;
+}
+
+.badminton-journey-section .journey-heading {
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: white;
+}
+
+.badminton-journey-section .register-btn {
+  background-color: red;
+  border: 1px solid red;
+  color: white;
+  padding: 0.8rem 1.3rem;
+  font-weight: 600;
+  font-size: 0.8rem;
+  transition: background-color 0.3s ease;
+}
+
+.badminton-journey-section .contact-btn {
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  padding: 0.8rem 1.3rem;
+  font-weight: 600;
+  font-size: 0.8rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.pic-btn button {
+  background-color: red;
+  border: 1px solid red;
+  color: white;
+  padding: 0.5rem 1rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+/* Footer  */
+
+.custom-footer {
+  background-color: #212529;
+  color: #ccc;
+}
+
+.custom-footer a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+.custom-footer a:hover {
+  color: #fff;
+}
+
+.footer-logo img {
+  max-width: 150px;
+  margin-bottom: 0rem;
+}
+
+.footer-logo-below {
+  font-size: 0.8rem;
+}
+
+.footer-links ul,
+.footer-contact ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li a {
+  font-size: 0.8rem;
+}
+
+.footer-contact ul li {
+  font-size: 0.8rem;
+}
+
+.footer-links li,
+.footer-contact li {
+  margin-bottom: 0.5rem;
+}
+
+.social-icons {
+  margin-top: 2rem;
+}
+
+.social-icons .bi {
+  font-size: 1rem;
+  margin-right: 1rem;
+}
+
+.app-qr-code {
+  width: 75px;
+  height: 75px;
+}
+
+.app-store-logos img {
+  width: 85px;
+}
+
+.copyright-section {
+  border-top: 1px solid #495057;
+  padding-top: 1rem;
+  margin-top: 2rem;
+  font-size: 0.875rem;
+}

@@ -1,0 +1,1739 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shuttle Match</title>
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="CSS/media.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+  </head>
+  <body>
+    <!-- Header  -->
+    <header class="hero-section">
+      <video autoplay muted loop playsinline class="bg-video">
+        <source src="Vedios/13652315_3840_2160_30fps.mp4" type="video/mp4" />
+      </video>
+      <div class="overlay"></div>
+      <nav class="navbar navbar-expand-lg custom-navbar mt-4 px-4">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="Images/logo.png" class="brand-logo" alt="Logo" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Badminton Games</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Marketplace</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">News room</a>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="#">Forum</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">FAQ's</a></li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact us</a>
+              </li>
+            </ul>
+
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link fw-bold" href="#">Login | Signup</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class="hero-content text-center text-white">
+        <h1 class="display-8 fw-bold">MATCH . PLAY . REPEAT</h1>
+        <p class="lead">Where Organisers and Players meet</p>
+        <a href="#" class="btn btn-primary btn-lg mt-3 rounded-pill px-4 py-3"
+          >Register Now</a
+        >
+      </div>
+    </header>
+
+    <!-- Badminton Cards Section -->
+    <section class="container-fluid">
+      <div class="container px-5">
+        <div class="row">
+          <div class="col-12">
+            <div class="badminton-games-head">
+              <h1 class="fw-bold">Badminton Games</h1>
+            </div>
+          </div>
+          <div class="col-12">
+            <div
+              class="upcoming-games-con d-flex align-items-center justify-content-between"
+            >
+              <h4 class="fw-bold">Upcoming Games</h4>
+              <div class="upcoming-games-icons d-flex gap-1">
+                <i class="bi bi-arrow-left fs-6 rounded-circle"></i>
+                <i class="bi bi-arrow-right fs-6 rounded-circle"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mobile and Tablet Carousel (one card per slide) -->
+        <div
+          id="mobileCarousel"
+          class="carousel slide d-lg-none"
+          data-bs-ride="carousel"
+          data-bs-interval="3000"
+        >
+          <div class="carousel-inner">
+            <!-- Mobile Carousel Item 1 -->
+            <div class="carousel-item active">
+              <div class="row justify-content-center">
+                <div class="col-12">
+                  <div class="badminton-card border shadow-sm">
+                    <div class="badminton-card-img">
+                      <img src="Images/hylo.png" alt="Hylo Open" />
+                    </div>
+                    <div class="badminton-card-body">
+                      <div class="badminton-card-title">
+                        <h4>Hylo Open <br />2024</h4>
+                        <div class="badminton-heart">
+                          <img src="Images/love.png" alt="Heart" />
+                        </div>
+                      </div>
+                      <div class="badminton-location">
+                        <i class="bi bi-geo-alt"></i>
+                        <h6>Saarbrucken, Germany</h6>
+                      </div>
+                      <div class="badminton-location">
+                        <i class="bi bi-calendar"></i>
+                        <h6 class="text-danger">29 October - 03 November</h6>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Mobile Carousel Item 2 -->
+            <div class="carousel-item">
+              <div class="row justify-content-center">
+                <div class="col-12">
+                  <div class="badminton-card border shadow-sm">
+                    <div class="badminton-card-img">
+                      <img src="Images/korea master.png" alt="Korea Masters" />
+                    </div>
+                    <div class="badminton-card-body">
+                      <div class="badminton-card-title">
+                        <h4>Korea Masters <br />2024</h4>
+                        <div class="badminton-heart">
+                          <img src="Images/love.png" alt="Heart" />
+                        </div>
+                      </div>
+                      <div class="badminton-location">
+                        <i class="bi bi-geo-alt"></i>
+                        <h6>Iksan City, Korea</h6>
+                      </div>
+                      <div class="badminton-location">
+                        <i class="bi bi-calendar"></i>
+                        <h6 class="text-danger">29 October - 03 November</h6>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Mobile Carousel Item 3 -->
+            <div class="carousel-item">
+              <div class="row justify-content-center">
+                <div class="col-12">
+                  <div class="badminton-card border shadow-sm">
+                    <div class="badminton-card-img">
+                      <img src="Images/japan.png" alt="Kumamoto Masters" />
+                    </div>
+                    <div class="badminton-card-body">
+                      <div class="badminton-card-title">
+                        <h4>Kumamoto Masters <br />Japan 2024</h4>
+                        <div class="badminton-heart">
+                          <img src="Images/love.png" alt="Heart" />
+                        </div>
+                      </div>
+                      <div class="badminton-location">
+                        <i class="bi bi-geo-alt"></i>
+                        <h6>Kumamoto, Japan</h6>
+                      </div>
+                      <div class="badminton-location">
+                        <i class="bi bi-calendar"></i>
+                        <h6 class="text-danger">29 October - 03 November</h6>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Mobile Carousel Item 4 -->
+            <div class="carousel-item">
+              <div class="row justify-content-center">
+                <div class="col-12">
+                  <div class="badminton-card border shadow-sm">
+                    <div class="badminton-card-img">
+                      <img src="Images/hylo.png" alt="Card 4" />
+                    </div>
+                    <div class="badminton-card-body">
+                      <div class="badminton-card-title">
+                        <h4>New Open <br />2024</h4>
+                        <div class="badminton-heart">
+                          <img src="Images/love.png" alt="Heart" />
+                        </div>
+                      </div>
+                      <div class="badminton-location">
+                        <i class="bi bi-geo-alt"></i>
+                        <h6>New City, Country</h6>
+                      </div>
+                      <div class="badminton-location">
+                        <i class="bi bi-calendar"></i>
+                        <h6 class="text-danger">04 - 05 November</h6>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Mobile Carousel Item 5 -->
+            <div class="carousel-item">
+              <div class="row justify-content-center">
+                <div class="col-12">
+                  <div class="badminton-card border shadow-sm">
+                    <div class="badminton-card-img">
+                      <img src="Images/korea master.png" alt="Card 5" />
+                    </div>
+                    <div class="badminton-card-body">
+                      <div class="badminton-card-title">
+                        <h4>More Games <br />2024</h4>
+                        <div class="badminton-heart">
+                          <img src="Images/love.png" alt="Heart" />
+                        </div>
+                      </div>
+                      <div class="badminton-location">
+                        <i class="bi bi-geo-alt"></i>
+                        <h6>Some Town, Somewhere</h6>
+                      </div>
+                      <div class="badminton-location">
+                        <i class="bi bi-calendar"></i>
+                        <h6 class="text-danger">10 - 12 November</h6>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Mobile Carousel Item 6 -->
+            <div class="carousel-item">
+              <div class="row justify-content-center">
+                <div class="col-12">
+                  <div class="badminton-card border shadow-sm">
+                    <div class="badminton-card-img">
+                      <img src="Images/japan.png" alt="Card 6" />
+                    </div>
+                    <div class="badminton-card-body">
+                      <div class="badminton-card-title">
+                        <h4>Finals<br />2024</h4>
+                        <div class="badminton-heart">
+                          <img src="Images/love.png" alt="Heart" />
+                        </div>
+                      </div>
+                      <div class="badminton-location">
+                        <i class="bi bi-geo-alt"></i>
+                        <h6>Another Place, Any Country</h6>
+                      </div>
+                      <div class="badminton-location">
+                        <i class="bi bi-calendar"></i>
+                        <h6 class="text-danger">20 - 25 November</h6>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Carousel Dots for Mobile -->
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#mobileCarousel"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#mobileCarousel"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#mobileCarousel"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#mobileCarousel"
+              data-bs-slide-to="3"
+              aria-label="Slide 4"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#mobileCarousel"
+              data-bs-slide-to="4"
+              aria-label="Slide 5"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#mobileCarousel"
+              data-bs-slide-to="5"
+              aria-label="Slide 6"
+            ></button>
+          </div>
+        </div>
+
+        <!-- Desktop and Laptop Carousel (three cards per slide) -->
+        <div
+          id="desktopCarousel"
+          class="carousel slide d-none d-lg-block"
+          data-bs-ride="carousel"
+          data-bs-interval="3000"
+        >
+          <div class="carousel-inner">
+            <!-- Desktop Carousel Item 1 (3 cards) -->
+            <div class="carousel-item active">
+              <div class="row justify-content-center">
+                <div class="col-lg-4">
+                  <div class="badminton-card border shadow-sm">
+                    <div class="badminton-card-img">
+                      <img src="Images/hylo.png" alt="Hylo Open" />
+                    </div>
+                    <div class="badminton-card-body">
+                      <div class="badminton-card-title">
+                        <h4>Hylo Open <br />2024</h4>
+                        <div class="badminton-heart">
+                          <img src="Images/love.png" alt="Heart" />
+                        </div>
+                      </div>
+                      <div class="badminton-location">
+                        <i class="bi bi-geo-alt"></i>
+                        <h6>Saarbrucken, Germany</h6>
+                      </div>
+                      <div class="badminton-location">
+                        <i class="bi bi-calendar"></i>
+                        <h6 class="text-danger">29 October - 03 November</h6>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="badminton-card border shadow-sm">
+                    <div class="badminton-card-img">
+                      <img src="Images/korea master.png" alt="Korea Masters" />
+                    </div>
+                    <div class="badminton-card-body">
+                      <div class="badminton-card-title">
+                        <h4>Korea Masters <br />2024</h4>
+                        <div class="badminton-heart">
+                          <img src="Images/love.png" alt="Heart" />
+                        </div>
+                      </div>
+                      <div class="badminton-location">
+                        <i class="bi bi-geo-alt"></i>
+                        <h6>Iksan City, Korea</h6>
+                      </div>
+                      <div class="badminton-location">
+                        <i class="bi bi-calendar"></i>
+                        <h6 class="text-danger">29 October - 03 November</h6>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="badminton-card border shadow-sm">
+                    <div class="badminton-card-img">
+                      <img src="Images/japan.png" alt="Kumamoto Masters" />
+                    </div>
+                    <div class="badminton-card-body">
+                      <div class="badminton-card-title">
+                        <h4>Kumamoto Masters <br />Japan 2024</h4>
+                        <div class="badminton-heart">
+                          <img src="Images/love.png" alt="Heart" />
+                        </div>
+                      </div>
+                      <div class="badminton-location">
+                        <i class="bi bi-geo-alt"></i>
+                        <h6>Kumamoto, Japan</h6>
+                      </div>
+                      <div class="badminton-location">
+                        <i class="bi bi-calendar"></i>
+                        <h6 class="text-danger">29 October - 03 November</h6>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Desktop Carousel Item 2 (3 cards) -->
+            <div class="carousel-item">
+              <div class="row justify-content-center">
+                <div class="col-lg-4">
+                  <div class="badminton-card border shadow-sm">
+                    <div class="badminton-card-img">
+                      <img src="Images/hylo.png" alt="Card 4" />
+                    </div>
+                    <div class="badminton-card-body">
+                      <div class="badminton-card-title">
+                        <h4>New Open <br />2024</h4>
+                        <div class="badminton-heart">
+                          <img src="Images/love.png" alt="Heart" />
+                        </div>
+                      </div>
+                      <div class="badminton-location">
+                        <i class="bi bi-geo-alt"></i>
+                        <h6>New City, Country</h6>
+                      </div>
+                      <div class="badminton-location">
+                        <i class="bi bi-calendar"></i>
+                        <h6 class="text-danger">04 - 05 November</h6>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="badminton-card border shadow-sm">
+                    <div class="badminton-card-img">
+                      <img src="Images/korea master.png" alt="Card 5" />
+                    </div>
+                    <div class="badminton-card-body">
+                      <div class="badminton-card-title">
+                        <h4>More Games <br />2024</h4>
+                        <div class="badminton-heart">
+                          <img src="Images/love.png" alt="Heart" />
+                        </div>
+                      </div>
+                      <div class="badminton-location">
+                        <i class="bi bi-geo-alt"></i>
+                        <h6>Some Town, Somewhere</h6>
+                      </div>
+                      <div class="badminton-location">
+                        <i class="bi bi-calendar"></i>
+                        <h6 class="text-danger">10 - 12 November</h6>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="badminton-card border shadow-sm">
+                    <div class="badminton-card-img">
+                      <img src="Images/japan.png" alt="Card 6" />
+                    </div>
+                    <div class="badminton-card-body">
+                      <div class="badminton-card-title">
+                        <h4>Finals<br />2024</h4>
+                        <div class="badminton-heart">
+                          <img src="Images/love.png" alt="Heart" />
+                        </div>
+                      </div>
+                      <div class="badminton-location">
+                        <i class="bi bi-geo-alt"></i>
+                        <h6>Another Place, Any Country</h6>
+                      </div>
+                      <div class="badminton-location">
+                        <i class="bi bi-calendar"></i>
+                        <h6 class="text-danger">20 - 25 November</h6>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Carousel Dots for Desktop -->
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#desktopCarousel"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#desktopCarousel"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- My Favourites Section -->
+    <section class="container-fluid mt-5">
+      <div class="container px-5">
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-12">
+            <div
+              class="favourite-games-con d-flex align-items-center justify-content-between mb-4"
+            >
+              <h4 class="fw-bold">My Favourite</h4>
+              <div class="upcoming-games-icons d-flex gap-1">
+                <i class="bi bi-arrow-left fs-6 rounded-circle"></i>
+                <i class="bi bi-arrow-right fs-6 rounded-circle"></i>
+              </div>
+            </div>
+          </div>
+
+          <!-- Favourite Mobile Carousel -->
+          <div
+            id="favouriteMobileCarousel"
+            class="carousel slide d-lg-none"
+            data-bs-ride="carousel"
+            data-bs-interval="3000"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="row justify-content-center">
+                  <div class="col-12">
+                    <div class="favourite-card border shadow-sm">
+                      <div class="favourite-card-img">
+                        <img src="Images/mm.png" alt="Badminton Court" />
+                      </div>
+                      <div class="favourite-card-body">
+                        <div class="favourite-card-title">
+                          <h4>SBH East Coast <br />@ Expo</h4>
+                          <i
+                            class="bi bi-heart-fill text-danger favourite-heart"
+                          ></i>
+                        </div>
+                        <div class="favourite-location">
+                          <i class="bi bi-geo-alt"></i>
+                          <h6>2 Changi South Ave 1, Singapore 486149</h6>
+                        </div>
+                        <a href="#" class="btn btn-direction rounded-pill">
+                          <i class="bi bi-geo-fill"></i>
+                          <span>DIRECTION</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row justify-content-center">
+                  <div class="col-12">
+                    <div class="favourite-card border shadow-sm">
+                      <div class="favourite-card-img">
+                        <img src="Images/jj.png" alt="Badminton Court" />
+                      </div>
+                      <div class="favourite-card-body">
+                        <div class="favourite-card-title">
+                          <h4>Singapore Badminton <br />Hall @ Sims</h4>
+                          <i
+                            class="bi bi-heart-fill text-danger favourite-heart"
+                          ></i>
+                        </div>
+                        <div class="favourite-location">
+                          <i class="bi bi-geo-alt"></i>
+                          <h6>1 Lor 23 Geylang, Singapore 388352</h6>
+                        </div>
+                        <a href="#" class="btn btn-direction rounded-pill">
+                          <i class="bi bi-geo-fill"></i>
+                          <span>DIRECTION</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row justify-content-center">
+                  <div class="col-12">
+                    <div class="favourite-card border shadow-sm">
+                      <div class="favourite-card-img">
+                        <img src="Images/nn.png" alt="Badminton Court" />
+                      </div>
+                      <div class="favourite-card-body">
+                        <div class="favourite-card-title">
+                          <h4>Smash arena <br />@ d'arena joo koon</h4>
+                          <i
+                            class="bi bi-heart-fill text-danger favourite-heart"
+                          ></i>
+                        </div>
+                        <div class="favourite-location">
+                          <i class="bi bi-geo-alt"></i>
+                          <h6>511 Upper Jurong Road, Singapore 638366</h6>
+                        </div>
+                        <a href="#" class="btn btn-direction rounded-pill">
+                          <i class="bi bi-geo-fill"></i>
+                          <span>DIRECTION</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Carousel Dots for Mobile -->
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#favouriteMobileCarousel"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#favouriteMobileCarousel"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#favouriteMobileCarousel"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+          </div>
+
+          <!-- Favourite Desktop Carousel -->
+          <div
+            id="favouriteDesktopCarousel"
+            class="carousel slide d-none d-lg-block"
+            data-bs-ride="carousel"
+            data-bs-interval="3000"
+          >
+            <div class="carousel-inner">
+              <!-- First slide with three cards -->
+              <div class="carousel-item active">
+                <div class="row justify-content-center">
+                  <div class="col-lg-4">
+                    <div class="favourite-card border shadow-sm">
+                      <div class="favourite-card-img">
+                        <img src="Images/mm.png" alt="Badminton Court" />
+                      </div>
+                      <div class="favourite-card-body">
+                        <div class="favourite-card-title">
+                          <h4>SBH East Coast <br />@ Expo</h4>
+                          <i
+                            class="bi bi-heart-fill text-danger favourite-heart"
+                          ></i>
+                        </div>
+                        <div class="favourite-location">
+                          <i class="bi bi-geo-alt"></i>
+                          <h6>2 Changi South Ave 1, Singapore 486149</h6>
+                        </div>
+                        <a href="#" class="btn btn-direction rounded-pill">
+                          <i class="bi bi-geo-fill"></i>
+                          <span>DIRECTION</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="favourite-card border shadow-sm">
+                      <div class="favourite-card-img">
+                        <img src="Images/jj.png" alt="Badminton Court" />
+                      </div>
+                      <div class="favourite-card-body">
+                        <div class="favourite-card-title">
+                          <h4>Singapore Badminton <br />Hall @ Sims</h4>
+                          <i
+                            class="bi bi-heart-fill text-danger favourite-heart"
+                          ></i>
+                        </div>
+                        <div class="favourite-location">
+                          <i class="bi bi-geo-alt"></i>
+                          <h6>1 Lor 23 Geylang, Singapore 388352</h6>
+                        </div>
+                        <a href="#" class="btn btn-direction rounded-pill">
+                          <i class="bi bi-geo-fill"></i>
+                          <span>DIRECTION</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="favourite-card border shadow-sm">
+                      <div class="favourite-card-img">
+                        <img src="Images/nn.png" alt="Badminton Court" />
+                      </div>
+                      <div class="favourite-card-body">
+                        <div class="favourite-card-title">
+                          <h4>Smash arena <br />@ d'arena joo koon</h4>
+                          <i
+                            class="bi bi-heart-fill text-danger favourite-heart"
+                          ></i>
+                        </div>
+                        <div class="favourite-location">
+                          <i class="bi bi-geo-alt"></i>
+                          <h6>511 Upper Jurong Road, Singapore 638366</h6>
+                        </div>
+                        <a href="#" class="btn btn-direction rounded-pill">
+                          <i class="bi bi-geo-fill"></i>
+                          <span>DIRECTION</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Second slide with three cards -->
+              <div class="carousel-item">
+                <div class="row justify-content-center">
+                  <div class="col-lg-4">
+                    <div class="favourite-card border shadow-sm">
+                      <div class="favourite-card-img">
+                        <img src="Images/mm.png" alt="Badminton Court" />
+                      </div>
+                      <div class="favourite-card-body">
+                        <div class="favourite-card-title">
+                          <h4>SBH East Coast <br />@ Expo</h4>
+                          <i
+                            class="bi bi-heart-fill text-danger favourite-heart"
+                          ></i>
+                        </div>
+                        <div class="favourite-location">
+                          <i class="bi bi-geo-alt"></i>
+                          <h6>2 Changi South Ave 1, Singapore 486149</h6>
+                        </div>
+                        <a href="#" class="btn btn-direction rounded-pill">
+                          <i class="bi bi-geo-fill"></i>
+                          <span>DIRECTION</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="favourite-card border shadow-sm">
+                      <div class="favourite-card-img">
+                        <img src="Images/jj.png" alt="Badminton Court" />
+                      </div>
+                      <div class="favourite-card-body">
+                        <div class="favourite-card-title">
+                          <h4>Singapore Badminton <br />Hall @ Sims</h4>
+                          <i
+                            class="bi bi-heart-fill text-danger favourite-heart"
+                          ></i>
+                        </div>
+                        <div class="favourite-location">
+                          <i class="bi bi-geo-alt"></i>
+                          <h6>1 Lor 23 Geylang, Singapore 388352</h6>
+                        </div>
+                        <a href="#" class="btn btn-direction rounded-pill">
+                          <i class="bi bi-geo-fill"></i>
+                          <span>DIRECTION</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="favourite-card border shadow-sm">
+                      <div class="favourite-card-img">
+                        <img src="Images/nn.png" alt="Badminton Court" />
+                      </div>
+                      <div class="favourite-card-body">
+                        <div class="favourite-card-title">
+                          <h4>Smash arena <br />@ d'arena joo koon</h4>
+                          <i
+                            class="bi bi-heart-fill text-danger favourite-heart"
+                          ></i>
+                        </div>
+                        <div class="favourite-location">
+                          <i class="bi bi-geo-alt"></i>
+                          <h6>511 Upper Jurong Road, Singapore 638366</h6>
+                        </div>
+                        <a href="#" class="btn btn-direction rounded-pill">
+                          <i class="bi bi-geo-fill"></i>
+                          <span>DIRECTION</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Carousel Dots for Desktop -->
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#favouriteDesktopCarousel"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#favouriteDesktopCarousel"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Banner Section  -->
+    <section class="container banner">
+      <img src="Images/poster.png" class="img-fluid" alt="Banner" />
+    </section>
+
+    <!-- Coaching Section -->
+    <section class="container-fluid mt-5">
+      <div class="container px-5">
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-12">
+            <div
+              class="favourite-games-con d-flex align-items-center justify-content-between mb-4"
+            >
+              <h4 class="fw-bold">Coaching</h4>
+              <div class="upcoming-games-icons d-flex gap-1">
+                <i
+                  class="bi bi-arrow-left fs-6 rounded-circle"
+                  data-bs-target="#coachingDesktopCarousel"
+                  data-bs-slide="prev"
+                ></i>
+                <i
+                  class="bi bi-arrow-right fs-6 rounded-circle"
+                  data-bs-target="#coachingDesktopCarousel"
+                  data-bs-slide="next"
+                ></i>
+              </div>
+            </div>
+          </div>
+
+          <!-- Coaching Mobile Carousel -->
+          <div
+            id="coachingMobileCarousel"
+            class="carousel slide d-lg-none"
+            data-bs-ride="carousel"
+            data-bs-interval="3000"
+          >
+            <div class="carousel-inner">
+              <!-- First slide (for mobile) -->
+              <div class="carousel-item active">
+                <div class="row justify-content-center">
+                  <div class="col-12">
+                    <div class="coaching-card-v2">
+                      <div class="image-wrapper">
+                        <img
+                          src="Images/player.webp"
+                          alt="Coach Shaheizy Sam"
+                        />
+                        <div class="price-label">$20.00/Hr</div>
+                        <div class="hashtag-label">#Single Coaching</div>
+                      </div>
+                      <div class="content-wrapper">
+                        <h4>Shaheizy Sam</h4>
+                        <div class="schedule">
+                          <h6>M T W</h6>
+                          <span>09:00 AM-10:00 AM</span>
+                        </div>
+                        <div class="location">
+                          <i class="bi bi-geo-alt-fill"></i>
+                          <h6>2 Changi South Ave 1, Singapore 486149</h6>
+                        </div>
+                        <a href="#" class="btn btn-book">Book Now</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Second slide (for mobile) -->
+              <div class="carousel-item active">
+                <div class="row justify-content-center">
+                  <div class="col-12">
+                    <div class="coaching-card-v2">
+                      <div class="image-wrapper">
+                        <img
+                          src="Images/imran khan.jpg"
+                          alt="Coach Shaheizy Sam"
+                        />
+                        <div class="price-label">$20.00/Hr</div>
+                        <div class="hashtag-label">#Group Coaching</div>
+                      </div>
+                      <div class="content-wrapper">
+                        <h4>Shaheizy Sam</h4>
+                        <div class="schedule">
+                          <h6>M T W</h6>
+                          <span>09:00 AM-10:00 AM</span>
+                        </div>
+                        <div class="location">
+                          <i class="bi bi-geo-alt-fill"></i>
+                          <h6>2 Changi South Ave 1, Singapore 486149</h6>
+                        </div>
+                        <a href="#" class="btn btn-book">Book Now</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Carousel Dots for Mobile -->
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#coachingMobileCarousel"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#coachingMobileCarousel"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+            </div>
+          </div>
+
+          <!-- Coaching Desktop Carousel -->
+          <div
+            id="coachingDesktopCarousel"
+            class="carousel slide d-none d-lg-block"
+            data-bs-ride="carousel"
+            data-bs-interval="3000"
+          >
+            <div class="carousel-inner">
+              <!-- First slide with three cards -->
+              <div class="carousel-item active">
+                <div class="row justify-content-center">
+                  <div class="col-lg-4">
+                    <div class="coaching-card-v2">
+                      <div class="image-wrapper">
+                        <img
+                          src="Images/player.webp"
+                          alt="Coach Shaheizy Sam"
+                        />
+                        <div class="price-label">$20.00/Hr</div>
+                        <div class="hashtag-label">#Single Coaching</div>
+                      </div>
+                      <div class="content-wrapper">
+                        <h4>Shaheizy Sam</h4>
+                        <div class="schedule">
+                          <h6>M T W T F S</h6>
+                          <span>09:00 AM-10:00 AM</span>
+                        </div>
+                        <div class="location">
+                          <i class="bi bi-geo-alt-fill"></i>
+                          <h6>2 Changi South Ave 1, Singapore 486149</h6>
+                        </div>
+                        <a href="#" class="btn btn-book">Book Now</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="coaching-card-v2">
+                      <div class="image-wrapper">
+                        <img src="Images/imran khan.jpg" alt="Coach Jane" />
+                        <div class="price-label">$25.00/Hr</div>
+                        <div class="hashtag-label">#Group Coaching</div>
+                      </div>
+                      <div class="content-wrapper">
+                        <h4>Jane Doe</h4>
+                        <div class="schedule">
+                          <h6>M W F</h6>
+                          <span>07:00 PM-08:30 PM</span>
+                        </div>
+                        <div class="location">
+                          <i class="bi bi-geo-alt-fill"></i>
+                          <h6>2 Changi South Ave 1, Singapore 486149</h6>
+                        </div>
+                        <a href="#" class="btn btn-book">Book Now</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="coaching-card-v2">
+                      <div class="image-wrapper">
+                        <img src="Images/nn.png" alt="Coach Alex" />
+                        <div class="price-label">$15.00/Hr</div>
+                        <div class="hashtag-label">#Team Coaching</div>
+                      </div>
+                      <div class="content-wrapper">
+                        <h4>Alex Lim</h4>
+                        <div class="schedule">
+                          <h6>T TH S</h6>
+                          <span>06:00 AM-07:00 AM</span>
+                        </div>
+                        <div class="location">
+                          <i class="bi bi-geo-alt-fill"></i>
+                          <h6>2 Changi South Ave 1, Singapore 486149</h6>
+                        </div>
+                        <a href="#" class="btn btn-book">Book Now</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Second slide with three cards -->
+              <div class="carousel-item">
+                <div class="row justify-content-center">
+                  <div class="col-lg-4">
+                    <div class="coaching-card-v2">
+                      <div class="image-wrapper">
+                        <img src="Images/mm.png" alt="Coach John" />
+                        <div class="price-label">$30.00/Hr</div>
+                        <div class="hashtag-label">#Single Coaching</div>
+                      </div>
+                      <div class="content-wrapper">
+                        <h4>John Smith</h4>
+                        <div class="schedule">
+                          <h6>T TH S</h6>
+                          <span>08:00 PM-09:30 PM</span>
+                        </div>
+                        <div class="location">
+                          <i class="bi bi-geo-alt-fill"></i>
+                          <h6>2 Changi South Ave 1, Singapore 486149</h6>
+                        </div>
+                        <a href="#" class="btn btn-book">Book Now</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="coaching-card-v2">
+                      <div class="image-wrapper">
+                        <img src="Images/jj.png" alt="Coach Kelly" />
+                        <div class="price-label">$20.00/Hr</div>
+                        <div class="hashtag-label">#Single Coaching</div>
+                      </div>
+                      <div class="content-wrapper">
+                        <h4>Kelly Chen</h4>
+                        <div class="schedule">
+                          <h6>S</h6>
+                          <span>10:00 AM-11:00 AM</span>
+                        </div>
+                        <div class="location">
+                          <i class="bi bi-geo-alt-fill"></i>
+                          <h6>2 Changi South Ave 1, Singapore 486149</h6>
+                        </div>
+                        <a href="#" class="btn btn-book">Book Now</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="coaching-card-v2">
+                      <div class="image-wrapper">
+                        <img src="Images/player.webp" alt="Coach Leo" />
+                        <div class="price-label">$18.00/Hr</div>
+                        <div class="hashtag-label">#Group Coaching</div>
+                      </div>
+                      <div class="content-wrapper">
+                        <h4>Leo Ong</h4>
+                        <div class="schedule">
+                          <h6>M F S</h6>
+                          <span>09:00 PM-10:00 PM</span>
+                        </div>
+                        <div class="location">
+                          <i class="bi bi-geo-alt-fill"></i>
+                          <h6>2 Changi South Ave 1, Singapore 486149</h6>
+                        </div>
+                        <a href="#" class="btn btn-book">Book Now</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Carousel Dots for Desktop -->
+            <div class="carousel-indicators coaching-indicators">
+              <button
+                type="button"
+                data-bs-target="#coachingDesktopCarousel"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#coachingDesktopCarousel"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- News Room Section -->
+    <section class="container news-room">
+      <div class="row">
+        <div class="col-12">
+          <div
+            class="news-room-con d-flex flex-column align-items-center text-center"
+          >
+            <h1>News Room</h1>
+            <p class="mx-auto">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam,
+              ratione consequuntur ex excepturi atque eum.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- News Banner Section  -->
+    <section class="container mt-5">
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <div class="news-banner-card">
+            <div class="row g-0">
+              <div class="col-md-6 news-banner-content">
+                <h1>
+                  China Open: Goh/Lai Cherish <br />
+                  'New Them'
+                </h1>
+                <p class="mb-0">
+                  A relentless and unforgiving world tour. The pressure valve
+                  extreme. Finding the exact science to unlocking that freedom,
+                  a nuance that escapes most.
+                </p>
+                <p>
+                  Yet, all of a sudden, one single life event, a change of
+                  mindset, or a new hope, can put you back on track. This can be
+                  almost as unexpected as the events that took you off course
+                  in...
+                </p>
+                <p class="news-banner-date">21 October 2024</p>
+              </div>
+              <div class="col-md-6 news-banner-image-container">
+                <img
+                  src="Images/jj.png"
+                  class="img-fluid"
+                  alt="Goh/Lai with heart hands"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Small Cards Section -->
+    <section class="small-cards mt-5">
+      <div class="container-fluid">
+        <!-- Desktop / Laptop Grid -->
+        <div class="row d-none d-lg-flex">
+          <div class="col-lg-4">
+            <div class="card-con h-100">
+              <img
+                src="Images/Babar_azam_2023.jpg"
+                class="card-img-top"
+                alt="Card 1 Image"
+              />
+              <div class="card-body">
+                <h4>Smashing Stats:</h4>
+                <h4>Hylo Open 2024</h4>
+                <h6>30 October 2024</h6>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="card-con h-100">
+              <img
+                src="Images/ahmad shehzad.jpg"
+                class="card-img-top"
+                alt="Card 2 Image"
+              />
+              <div class="card-body">
+                <h4>Player Spotlight:</h4>
+                <h4>World Championships</h4>
+                <h6>25 October 2024</h6>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="card-con h-100">
+              <img
+                src="Images/imran khan.jpg"
+                class="card-img-top"
+                alt="Card 3 Image"
+              />
+              <div class="card-body">
+                <h4>Tournament Results:</h4>
+                <h4>Grand Slam Final</h4>
+                <h6>20 October 2024</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mobile & Tablet Carousel -->
+        <div class="row d-lg-none">
+          <div class="col-12">
+            <div
+              id="cardCarousel"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#cardCarousel"
+                  data-bs-slide-to="0"
+                  class="active"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#cardCarousel"
+                  data-bs-slide-to="1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#cardCarousel"
+                  data-bs-slide-to="2"
+                ></button>
+              </div>
+
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="card-con mx-auto">
+                    <img
+                      src="Images/Babar_azam_2023.jpg"
+                      class="card-img-top"
+                      alt="Card 1 Image"
+                    />
+                    <div class="card-body">
+                      <h4>Smashing Stats:</h4>
+                      <h4>Hylo Open 2024</h4>
+                      <h6>30 October 2024</h6>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="carousel-item">
+                  <div class="card-con mx-auto">
+                    <img
+                      src="Images/ahmad shehzad.jpg"
+                      class="card-img-top"
+                      alt="Card 2 Image"
+                    />
+                    <div class="card-body">
+                      <h4>Player Spotlight:</h4>
+                      <h4>World Championships</h4>
+                      <h6>25 October 2024</h6>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="carousel-item">
+                  <div class="card-con mx-auto">
+                    <img
+                      src="Images/imran khan.jpg"
+                      class="card-img-top"
+                      alt="Card 3 Image"
+                    />
+                    <div class="card-body">
+                      <h4>Tournament Results:</h4>
+                      <h4>Grand Slam Final</h4>
+                      <h6>20 October 2024</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Carousel Controls -->
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#cardCarousel"
+                data-bs-slide="prev"
+              >
+                <span class="carousel-control-prev-icon"></span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#cardCarousel"
+                data-bs-slide="next"
+              >
+                <span class="carousel-control-next-icon"></span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Partners Section  -->
+    <section class="partners-section">
+      <div class="container-fluid">
+        <h2>Our Partners</h2>
+        <div class="logo-container">
+          <!-- First Row -->
+          <div class="logo-card">
+            <img
+              src="Images/vecteezy_amazon-logo-png-amazon-icon-transparent-png_19766240.png"
+              alt="Amazon Logo"
+            />
+          </div>
+          <div class="logo-card">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/6/69/Airbnb_Logo_B%C3%A9lo.svg"
+              alt="Airbnb Logo"
+            />
+          </div>
+          <div class="logo-card">
+            <img
+              src="Images/vecteezy_google-logo-icon-symbol_28667072.png"
+              alt="Google Logo"
+            />
+          </div>
+          <div class="logo-card">
+            <img src="Images/fedex-seeklogo.png" alt="FedEx Logo" />
+          </div>
+
+          <!-- Second Row -->
+          <div class="logo-card">
+            <img src="Images/OYO_Rooms_(logo).png" alt="OYO Logo" />
+          </div>
+          <div class="logo-card">
+            <img src="Images/ola.png" alt="OLA Logo" />
+          </div>
+          <div class="logo-card">
+            <img src="Images/walmar.png" alt="Walmart Logo" />
+          </div>
+          <div class="logo-card">
+            <img src="Images/micro sooft.png" alt="Microsoft Logo" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Memeber's Gallery Section  -->
+    <section class="p-5">
+      <div class="members-container">
+        <div class="members-head"><h1>Member's Gallery</h1></div>
+        <!-- Mobile Carousel -->
+        <div
+          id="cardCarousel"
+          class="carousel slide carousel-container"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="member-card">
+                <img
+                  src="Images/imran khan.jpg"
+                  class="member-img"
+                  alt="Card Image 1"
+                />
+                <div class="member-body">
+                  <div class="profile-section">
+                    <img
+                      src="Images/player.webp"
+                      class="profile-img"
+                      alt="Profile Picture"
+                    />
+                    <span class="profile-name">John Doe</span>
+                  </div>
+                  <div class="action-section">
+                    <a href="#" class="action-item">👍 200</a>
+                    <a href="#" class="action-item">💬 Report image</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="member-card">
+                <img
+                  src="Images/jj.png"
+                  class="member-img"
+                  alt="Card Image 2"
+                />
+                <div class="member-body">
+                  <div class="profile-section">
+                    <img
+                      src="Images/player.webp"
+                      class="profile-img"
+                      alt="Profile Picture"
+                    />
+                    <span class="profile-name">John Doe</span>
+                  </div>
+                  <div class="action-section">
+                    <a href="#" class="action-item">👍 150</a>
+                    <a href="#" class="action-item">💬 Report image</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="member-card">
+                <img
+                  src="Images/mm.png"
+                  class="member-img"
+                  alt="Card Image 3"
+                />
+                <div class="member-body">
+                  <div class="profile-section">
+                    <img
+                      src="Images/player.webp"
+                      class="profile-img"
+                      alt="Profile Picture"
+                    />
+                    <span class="profile-name">John Doe</span>
+                  </div>
+                  <div class="action-section">
+                    <a href="#" class="action-item">👍 300</a>
+                    <a href="#" class="action-item">💬 Report image</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="member-card">
+                <img
+                  src="Images/Babar_azam_2023.jpg"
+                  class="member-img"
+                  alt="Card Image 4"
+                />
+                <div class="member-body">
+                  <div class="profile-section">
+                    <img
+                      src="Images/player.webp"
+                      class="profile-img"
+                      alt="Profile Picture"
+                    />
+                    <span class="profile-name">John Doe</span>
+                  </div>
+                  <div class="action-section">
+                    <a href="#" class="action-item">👍 50</a>
+                    <a href="#" class="action-item">💬 Report image</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#cardCarousel"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#cardCarousel"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#cardCarousel"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#cardCarousel"
+              data-bs-slide-to="3"
+              aria-label="Slide 4"
+            ></button>
+          </div>
+        </div>
+
+        <!-- Tablet and Desktop -->
+        <div class="members-grid">
+          <!-- First Row - Tablet (2) & Desktop (3) -->
+          <div class="member-card">
+            <img
+              src="Images/imran khan.jpg"
+              class="member-img"
+              alt="Card Image 1"
+            />
+            <div class="member-body">
+              <div class="profile-section">
+                <img
+                  src="Images/player.webp"
+                  class="profile-img"
+                  alt="Profile Picture"
+                />
+                <span class="profile-name">John Doe</span>
+              </div>
+              <div class="action-section">
+                <a href="#" class="action-item">👍 200</a>
+                <a href="#" class="action-item">💬 Report image</a>
+              </div>
+            </div>
+          </div>
+          <div class="member-card">
+            <img src="Images/jj.png" class="member-img" alt="Card Image 2" />
+            <div class="member-body">
+              <div class="profile-section">
+                <img
+                  src="Images/player.webp"
+                  class="profile-img"
+                  alt="Profile Picture"
+                />
+                <span class="profile-name">Jane Doe</span>
+              </div>
+              <div class="action-section">
+                <a href="#" class="action-item">👍 150</a>
+                <a href="#" class="action-item">💬 Report image</a>
+              </div>
+            </div>
+          </div>
+          <div class="member-card">
+            <img src="Images/mm.png" class="member-img" alt="Card Image 3" />
+            <div class="member-body">
+              <div class="profile-section">
+                <img
+                  src="Images/player.webp"
+                  class="profile-img"
+                  alt="Profile Picture"
+                />
+                <span class="profile-name">John Doe</span>
+              </div>
+              <div class="action-section">
+                <a href="#" class="action-item">👍 300</a>
+                <a href="#" class="action-item">💬 Report image</a>
+              </div>
+            </div>
+          </div>
+          <!-- Second Row - Tablet (2) & Desktop (3) -->
+          <div class="member-card">
+            <img src="Images/nn.png" class="member-img" alt="Card Image 4" />
+            <div class="member-body">
+              <div class="profile-section">
+                <img
+                  src="Images/player.webp"
+                  class="profile-img"
+                  alt="Profile Picture"
+                />
+                <span class="profile-name">John Doe</span>
+              </div>
+              <div class="action-section">
+                <a href="#" class="action-item">👍 250</a>
+                <a href="#" class="action-item">💬 Report image</a>
+              </div>
+            </div>
+          </div>
+          <div class="member-card">
+            <img
+              src="Images/Babar_azam_2023.jpg"
+              class="member-img"
+              alt="Card Image 5"
+            />
+            <div class="member-body">
+              <div class="profile-section">
+                <img
+                  src="Images/player.webp"
+                  class="profile-img"
+                  alt="Profile Picture"
+                />
+                <span class="profile-name">John Doe</span>
+              </div>
+              <div class="action-section">
+                <a href="#" class="action-item">👍 180</a>
+                <a href="#" class="action-item">💬 Report image</a>
+              </div>
+            </div>
+          </div>
+          <div class="member-card">
+            <img
+              src="Images/ahmad shehzad.jpg"
+              class="member-img"
+              alt="Card Image 6"
+            />
+            <div class="member-body">
+              <div class="profile-section">
+                <img
+                  src="Images/player.webp"
+                  class="profile-img"
+                  alt="Profile Picture"
+                />
+                <span class="profile-name">John Doe</span>
+              </div>
+              <div class="action-section">
+                <a href="#" class="action-item">👍 220</a>
+                <a href="#" class="action-item">💬 Report image</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Badminton Journey  -->
+    <section class="full-width-section">
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-12">
+          <div class="pic-btn d-flex justify-content-center mt-0">
+            <button class="rounded-pill">More Pictures</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="badminton-journey-section mt-5">
+        <div class="badminton-journey-content">
+          <h1 class="journey-heading mb-4">
+            Your badminton <br />
+            journey awaits!
+          </h1>
+          <div class="d-flex justify-content-center gap-5">
+            <button class="register-btn rounded-pill">Register Now</button>
+            <button class="contact-btn rounded-pill">Contact Now</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer  -->
+    <footer class="custom-footer py-5 px-5">
+      <div class="container-fluid px-0">
+        <div class="row px-0">
+          <!-- Logo & Address -->
+          <div class="col-12 col-lg-3 mb-4 mb-lg-0">
+            <div class="footer-logo">
+              <img
+                src="Images/logo.png"
+                alt="Shuttle Match Logo"
+                class="img-fluid rounded-md"
+              />
+              <p class="mb-3">Bookings Simplified</p>
+            </div>
+            <p class="mb-0 footer-logo-below">
+              5-4-2 Block 5 Jalan 2/127A Happy
+            </p>
+            <p class="footer-logo-below">Garden Negeri Sembilan Malaysia</p>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="col-12 col-lg-3 mb-4 mb-lg-0 quick-links">
+            <h5 class="fw-bold text-white mb-3">Quick Links</h5>
+            <div class="footer-links">
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About US</a></li>
+                <li><a href="#">Badminton games</a></li>
+                <li><a href="#">Marketplace</a></li>
+                <li><a href="#">News Room</a></li>
+                <li><a href="#">Forum</a></li>
+                <li><a href="#">Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Contact Us -->
+          <div class="col-12 col-lg-3 mb-5 mb-lg-0 contact-us">
+            <h5 class="fw-bold text-white mb-3">Contact Us</h5>
+            <div class="footer-contact">
+              <ul>
+                <li>+1 234 567 890</li>
+                <li>name@mail.com</li>
+              </ul>
+              <div class="social-icons">
+                <a href="#" class="text-white"
+                  ><i class="bi bi-facebook me-3"></i
+                ></a>
+                <a href="#" class="text-white"
+                  ><i class="bi bi-twitter me-3"></i
+                ></a>
+                <a href="#" class="text-white"
+                  ><i class="bi bi-instagram me-3"></i
+                ></a>
+                <a href="#" class="text-white"
+                  ><i class="bi bi-linkedin me-3"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Download App -->
+          <div class="col-12 col-lg-3 mb-4 mb-lg-0 download-app">
+            <h5 class="fw-bold text-white mb-3">Download App</h5>
+            <div class="icons-flex d-flex gap-3">
+              <img
+                src="Images/qr.png"
+                alt="QR Code"
+                class="app-qr-code rounded-md"
+              />
+              <div class="app-store-logos mt-2">
+                <img
+                  src="Images/get-it-on-google-play-badge-seeklogo.png"
+                  alt="Get it on Google Play"
+                  class="img-fluid d-block mb-2 rounded-md"
+                />
+                <img
+                  src="Images/download-on-the-app-store-seeklogo.png"
+                  alt="Download on the App Store"
+                  class="img-fluid d-block rounded-md"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Copyright Section -->
+        <div class="row copyright-section text-start">
+          <div class="col-12 col-lg-6 mb-2 mb-lg-0">
+            © Copyright 2024
+            <span class="fw-bold text-white">Shuttle Match</span> All rights
+            reserved.
+          </div>
+          <div class="col-12 col-lg-6 text-lg-end">
+            <a href="#" class="me-3">Privacy Policy</a>
+            <a href="#">Terms & Condition</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
