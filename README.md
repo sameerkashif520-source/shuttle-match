@@ -19,7 +19,7 @@ Responsive landing page for shuttle/matching service.
 - Cross-browser compatibility
 
 ## Live Demo
-[https://shuttle-match-frontend.netlify.app/]
+https://shuttle-match-frontend.netlify.app/
 
 ## Status
 Built for learning. Open to feedback.
